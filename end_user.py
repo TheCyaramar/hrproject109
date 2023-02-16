@@ -22,7 +22,7 @@ def file_upload():
 
     # Loading the datasets
     test = pd.read_csv(file_path)
-    test.insert(1, column = "target", value = 0)
+    test.insert(5, column = "target", value = 0)
     pre_result = test
     test = test.drop(columns = ['target'])
 
